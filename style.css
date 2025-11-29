@@ -1,0 +1,312 @@
+* {
+    box-sizing: border-box; /* Facilite la mise en page responsive */
+    margin: 0;
+    padding: 0oui h;
+}
+html {
+    /* Active le défilement fluide pour tous les liens d'ancrage */
+    scroll-behavior: smooth; 
+}
+body {
+    background-color: rgba(248, 248, 247, 0.548);
+    font-family: sans-serif;
+    padding: 2px;
+    
+}
+/* pour responsivité */
+#cadre {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 2px; 
+    box-sizing: border-box;
+
+}
+/* disposé le contenu en colonne */
+header {
+    position: fixed;
+    top: 0;
+    /* Assure que le header soit au-dessus des autres éléments */
+    z-index: 1000; 
+    display: flex; 
+    /* mettre d'espace entre les élément */
+    justify-content: space-between;
+    background-color: rgb(20, 20, 43);
+    padding: 15px;
+    color: aliceblue;
+    /* centré les elements par rapport au background  */
+    align-items: center;
+    box-shadow: 0 5px 12px rgba(178, 192, 167, 0.137);
+
+}
+ul {
+    display:flex ;
+    gap: 30px;
+    list-style: none;
+    
+}
+#name {
+    padding-left: 70px;
+}
+a {
+    text-decoration:aqua;
+    color: aliceblue;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+    align-items: center; 
+}
+/* Effet de survol */
+nav ul li a:hover {
+    color: #ff7d13; 
+}
+button {
+    padding: 5px;
+    border-radius: 8px;
+    border: 4px;
+    font-weight:  bold;
+    background-color: orangered;
+    margin: 14px;
+}
+#acceuil {
+    display: flex;
+    align-items: center;
+    margin: 55px;
+
+}
+#savoir {
+    font-size: 20px;
+    background-color: rgb(30, 30, 41);
+    color: aliceblue; 
+    padding: 9px;
+    transition: transform 0.3s ease-out; 
+}
+#savoir:hover {
+    transform: scale(1.1) translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+#prob {
+    font-size: 20px;
+    background-color: orangered;
+    color: aliceblue;
+    padding: 9px;
+    transition: transform 0.3s ease-out;
+}
+#prob:hover { 
+    transform: scale(1.1) translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.text,.image {
+    flex: 1;
+    margin-top: 50px;
+    text-align: left;
+    align-items: center;
+}
+.text{
+    padding-left: 23px;
+}
+.image {
+    align-items: center;
+    margin-right: 95px;
+    /* box-shadow: 0 5px 15Px blue; */
+    transition: transform 0.3s ease-out;
+}
+.image:hover{  
+    transform: scale(1.1)translateY(-0px); 
+}
+#hello {
+    font-size: 23px;
+}
+#bienvenue {
+    font-size: 25px;
+}
+#georges {
+    font-size: 34px;
+    color: orangered;
+}
+#description {
+    font-size: 30px;
+    color: rgb(9, 9, 32);
+}
+#page2 {
+    
+    background-color: rgb(20, 20, 43);
+    /* margin-top: 0px; */
+    color: aliceblue;
+    padding: 34px;
+}
+#apropos {
+    font-size: 20px;
+    text-align: center;
+    padding: 34px;
+}
+#realisation {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    gap: 64px;
+    font-size: 20px;
+}
+#projetrealis,#anneexp,#clientsatisfy{
+    padding: 3%;
+}
+.val{  
+    color: orangered;
+    font-size: 75px;
+    transition: 2s;
+}
+.val:hover {
+    transform: scale(1.2)
+}
+#para {
+    font-weight: bolder;
+}
+
+/* PAGE DE SERVICE  */
+#page3 {
+    background-color:#130b3318;
+    padding: 64px;
+    padding-bottom: 1px;
+} 
+.introServi {
+    text-align: center;
+    font-size: 23px;
+    padding: 9px;
+}
+.Services{
+    font-size: 17px;
+    display: flex;
+    margin: 99px;
+    justify-content: space-between;
+    gap: 109px;
+}
+
+.material-icons {
+    /* background-color: white; */
+    box-shadow: 0 0.1px 1px rgba(0, 0, 0, 0.3);
+    border-radius: 17px;
+    font-size: 56px;
+    color: orangered;
+    transition: transform 0.3s ease-out;
+}
+.material-icons:hover{
+    transform: scale(1.1) translateY(-5px);
+}
+
+.design,.devWEB,.devMOB{
+    padding: 15px;
+    border-radius: 17px;
+    transition: transform 0.3s ease-out; 
+    box-shadow: 0 1px 15px rgba(48, 18, 184, 0.3);
+    
+}
+/*  
+.design:hover {
+    transform: scale(1.1) translateY(-5px);
+}
+.devWEB:hover{
+    transform: scale(1.1) translateY(-5px);
+}
+.devMOB:hover{
+    transform: scale(1.1) translateY(-5px);
+}
+*/
+.compétences{
+    text-align: center;
+    justify-content: center;
+    font-size: 20px;
+    padding-top: 45px;
+    
+}
+.blocprogress {
+    background-color: #fff;
+    margin: 90px;
+    width: 100%;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 10px 30px -15px blue;
+    transition: 2s
+}
+.blocprogress:hover{
+    transform: scale(1.1) translateY(-5px);
+}
+.boite {
+    width: 100%;
+    margin: 10px 0px;
+
+}
+.contenant-de-la-barre {
+    display: flex;
+    align-items: center;
+}
+.barre {
+    width: 100%;
+    height: 10px;
+    background-color:#f2f2f2;
+    border-radius: 25px;
+    position: relative;
+}
+.lignePr {
+    background-color: rgb(238, 67, 5);
+    position: absolute;
+    width: 46%;
+    height: 10px;
+    border-radius: 25px;
+    transform: scale(0);
+    animation: animate 3s cubic-bezier(1, 0, 0.5, 1)
+    forwards  ;
+}
+@keyframes animate {
+    100%{
+     transform: scale(1);
+    }
+}
+.pourcentageD {
+    margin-left: 15px;
+    font-size: 20px;
+    justify-content: center;
+}
+.bar-de-prog {
+    display: flex;
+}
+
+/* PAGE DE CONTACT */
+#page5 {
+    background-color: #130b3318;
+    display: flex;
+    padding: 90px;
+    justify-content: center;
+    flex: 1;
+    align-items: center;
+    gap: 64px;
+}
+.pcontact {
+    /* width: 50%; */
+    font-size: 20px;
+    padding-right: 20%;
+}
+.info {
+    display: flex;
+    gap: 15px;
+}
+.form {
+    justify-content: center;
+}
+.pied-de-page{
+    text-align: center;
+    background-color: rgb(9, 9, 19);
+    color: #f2f2f2;
+    padding: 95px;
+    align-items: center;
+    font-size: 20px;
+}
+.liens-sociaux {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    text-align: center;
+}
